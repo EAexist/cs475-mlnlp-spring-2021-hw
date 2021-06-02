@@ -1,0 +1,1350 @@
+env: POOL_NAME=CLS
+2021-05-08 23:19:01.611199: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Downloading: 28.7kB [00:00, 17.3MB/s]       
+Downloading: 28.7kB [00:00, 25.9MB/s]       
+Downloading: 100% 377k/377k [00:00<00:00, 10.0MB/s]
+[INFO|file_utils.py:1386] 2021-05-08 23:19:05,762 >> https://huggingface.co/bert-base-cased/resolve/main/config.json not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmpgzheog7n
+Downloading: 100% 570/570 [00:00<00:00, 509kB/s]
+[INFO|file_utils.py:1390] 2021-05-08 23:19:05,967 >> storing https://huggingface.co/bert-base-cased/resolve/main/config.json in cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|file_utils.py:1393] 2021-05-08 23:19:05,967 >> creating metadata file for /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:463] 2021-05-08 23:19:05,968 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-08 23:19:05,968 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "CLS",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-08 23:19:06,182 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-08 23:19:06,183 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|file_utils.py:1386] 2021-05-08 23:19:06,532 >> https://huggingface.co/bert-base-cased/resolve/main/vocab.txt not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmpdtrw_pi7
+Downloading: 100% 213k/213k [00:00<00:00, 812kB/s]
+[INFO|file_utils.py:1390] 2021-05-08 23:19:07,011 >> storing https://huggingface.co/bert-base-cased/resolve/main/vocab.txt in cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|file_utils.py:1393] 2021-05-08 23:19:07,011 >> creating metadata file for /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|file_utils.py:1386] 2021-05-08 23:19:07,219 >> https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmp_om99gr9
+Downloading: 100% 436k/436k [00:00<00:00, 1.69MB/s]
+[INFO|file_utils.py:1390] 2021-05-08 23:19:07,684 >> storing https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json in cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|file_utils.py:1393] 2021-05-08 23:19:07,684 >> creating metadata file for /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|file_utils.py:1386] 2021-05-08 23:19:08,295 >> https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmpzrdo0s0t
+Downloading: 100% 29.0/29.0 [00:00<00:00, 27.8kB/s]
+[INFO|file_utils.py:1390] 2021-05-08 23:19:08,501 >> storing https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json in cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|file_utils.py:1393] 2021-05-08 23:19:08,501 >> creating metadata file for /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:19:08,501 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:19:08,501 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:19:08,501 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:19:08,501 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:19:08,501 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|file_utils.py:1386] 2021-05-08 23:19:08,735 >> https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmp73cpyj8s
+Downloading: 100% 436M/436M [00:10<00:00, 41.0MB/s]
+[INFO|file_utils.py:1390] 2021-05-08 23:19:19,578 >> storing https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin in cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[INFO|file_utils.py:1393] 2021-05-08 23:19:19,579 >> creating metadata file for /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[INFO|modeling_utils.py:1051] 2021-05-08 23:19:19,579 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-08 23:19:22,990 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-08 23:19:22,990 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+100% 9/9 [00:00<00:00, 19.68ba/s]
+100% 2/2 [00:00<00:00, 27.18ba/s]
+100% 2/2 [00:00<00:00, 31.38ba/s]
+Downloading: 5.75kB [00:00, 6.51MB/s]       
+[INFO|trainer.py:483] 2021-05-08 23:19:27,340 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-08 23:19:27,341 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-08 23:19:27,519 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-08 23:19:27,519 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-08 23:19:27,519 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-08 23:19:27,519 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-08 23:19:27,519 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-08 23:19:27,519 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-08 23:19:27,519 >>   Total optimization steps = 536
+ 93% 500/536 [05:30<00:24,  1.45it/s][INFO|trainer.py:1558] 2021-05-08 23:24:58,312 >> Saving model checkpoint to /tmp/cola/CLS/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-08 23:24:58,313 >> Configuration saved in /tmp/cola/CLS/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-08 23:24:59,791 >> Model weights saved in /tmp/cola/CLS/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-08 23:24:59,792 >> tokenizer config file saved in /tmp/cola/CLS/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-08 23:24:59,793 >> Special tokens file saved in /tmp/cola/CLS/checkpoint-500/special_tokens_map.json
+100% 536/536 [05:59<00:00,  1.82it/s][INFO|trainer.py:1129] 2021-05-08 23:25:27,251 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [05:59<00:00,  1.49it/s]
+[INFO|trainer.py:1558] 2021-05-08 23:25:27,456 >> Saving model checkpoint to /tmp/cola/CLS/
+[INFO|configuration_utils.py:314] 2021-05-08 23:25:27,457 >> Configuration saved in /tmp/cola/CLS/config.json
+[INFO|modeling_utils.py:837] 2021-05-08 23:25:28,901 >> Model weights saved in /tmp/cola/CLS/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-08 23:25:28,901 >> tokenizer config file saved in /tmp/cola/CLS/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-08 23:25:28,901 >> Special tokens file saved in /tmp/cola/CLS/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-08 23:25:28,930 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_runtime              = 359.7312
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:28,931 >>   train_samples_per_second   =     1.49
+[INFO|trainer.py:483] 2021-05-08 23:25:29,036 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-08 23:25:29,037 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-08 23:25:29,038 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-08 23:25:29,038 >>   Batch size = 8
+100% 131/131 [00:09<00:00, 14.47it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-08 23:25:38,218 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   eval_loss                 =  0.4737
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   eval_matthews_correlation =  0.5556
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,218 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,219 >>   eval_runtime              =  9.0674
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,219 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:25:38,219 >>   eval_samples_per_second   = 115.027
+
+env: POOL_NAME=MEAN_MAX
+2021-05-08 23:25:41.550989: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-08 23:25:43,779 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-08 23:25:43,780 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MEAN_MAX",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-08 23:25:43,985 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-08 23:25:43,985 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:25:45,030 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:25:45,030 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:25:45,030 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:25:45,030 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:25:45,030 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-08 23:25:45,258 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-08 23:25:48,709 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-08 23:25:48,709 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.linear.weight', 'bert.pooler.linear.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-08 23:25:52,402 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:483] 2021-05-08 23:25:52,403 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:946] 2021-05-08 23:25:52,583 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-08 23:25:52,583 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-08 23:25:52,583 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-08 23:25:52,583 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-08 23:25:52,583 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-08 23:25:52,583 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-08 23:25:52,583 >>   Total optimization steps = 536
+ 93% 500/536 [06:13<00:26,  1.34it/s][INFO|trainer.py:1558] 2021-05-08 23:32:06,491 >> Saving model checkpoint to /tmp/cola/MEAN_MAX/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-08 23:32:06,492 >> Configuration saved in /tmp/cola/MEAN_MAX/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-08 23:32:08,185 >> Model weights saved in /tmp/cola/MEAN_MAX/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-08 23:32:08,186 >> tokenizer config file saved in /tmp/cola/MEAN_MAX/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-08 23:32:08,187 >> Special tokens file saved in /tmp/cola/MEAN_MAX/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:45<00:00,  1.66it/s][INFO|trainer.py:1129] 2021-05-08 23:32:38,153 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:45<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-08 23:32:38,364 >> Saving model checkpoint to /tmp/cola/MEAN_MAX/
+[INFO|configuration_utils.py:314] 2021-05-08 23:32:38,365 >> Configuration saved in /tmp/cola/MEAN_MAX/config.json
+[INFO|modeling_utils.py:837] 2021-05-08 23:32:39,990 >> Model weights saved in /tmp/cola/MEAN_MAX/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-08 23:32:39,991 >> tokenizer config file saved in /tmp/cola/MEAN_MAX/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-08 23:32:39,991 >> Special tokens file saved in /tmp/cola/MEAN_MAX/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-08 23:32:40,019 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,019 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,019 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,019 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   init_mem_gpu_alloc_delta   =    415MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_mem_gpu_alloc_delta  =   1304MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_mem_gpu_peaked_delta =   3396MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_runtime              = 405.5701
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:40,020 >>   train_samples_per_second   =    1.322
+[INFO|trainer.py:483] 2021-05-08 23:32:40,134 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:1775] 2021-05-08 23:32:40,136 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-08 23:32:40,136 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-08 23:32:40,136 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.62it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-08 23:32:49,222 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_loss                 =  0.4975
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_matthews_correlation =  0.4638
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_runtime              =  8.9756
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:32:49,222 >>   eval_samples_per_second   = 116.204
+
+env: POOL_NAME=MY_ATTEN
+2021-05-08 23:32:52.073835: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-08 23:32:54,201 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-08 23:32:54,202 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_ATTEN",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-08 23:32:54,405 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-08 23:32:54,406 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:32:55,422 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:32:55,422 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:32:55,422 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:32:55,422 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-08 23:32:55,422 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-08 23:32:55,794 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-08 23:32:59,147 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-08 23:32:59,147 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-08 23:33:02,592 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-08 23:33:02,592 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-08 23:33:02,761 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-08 23:33:02,761 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-08 23:33:02,761 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-08 23:33:02,761 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-08 23:33:02,761 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-08 23:33:02,761 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-08 23:33:02,761 >>   Total optimization steps = 536
+ 93% 500/536 [06:16<00:27,  1.33it/s][INFO|trainer.py:1558] 2021-05-08 23:39:19,206 >> Saving model checkpoint to /tmp/cola/MY_ATTEN/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-08 23:39:19,207 >> Configuration saved in /tmp/cola/MY_ATTEN/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-08 23:39:20,859 >> Model weights saved in /tmp/cola/MY_ATTEN/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-08 23:39:20,860 >> tokenizer config file saved in /tmp/cola/MY_ATTEN/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-08 23:39:20,860 >> Special tokens file saved in /tmp/cola/MY_ATTEN/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:48<00:00,  1.65it/s][INFO|trainer.py:1129] 2021-05-08 23:39:50,981 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:48<00:00,  1.31it/s]
+[INFO|trainer.py:1558] 2021-05-08 23:39:51,189 >> Saving model checkpoint to /tmp/cola/MY_ATTEN/
+[INFO|configuration_utils.py:314] 2021-05-08 23:39:51,190 >> Configuration saved in /tmp/cola/MY_ATTEN/config.json
+[INFO|modeling_utils.py:837] 2021-05-08 23:39:52,812 >> Model weights saved in /tmp/cola/MY_ATTEN/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-08 23:39:52,812 >> tokenizer config file saved in /tmp/cola/MY_ATTEN/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-08 23:39:52,813 >> Special tokens file saved in /tmp/cola/MY_ATTEN/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-08 23:39:52,842 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,842 >>   epoch                      =    2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,842 >>   init_mem_cpu_alloc_delta   =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,842 >>   init_mem_cpu_peaked_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,842 >>   init_mem_gpu_alloc_delta   =  413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,842 >>   init_mem_gpu_peaked_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,842 >>   train_mem_cpu_alloc_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,843 >>   train_mem_cpu_peaked_delta =  170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,843 >>   train_mem_gpu_alloc_delta  = 1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,843 >>   train_mem_gpu_peaked_delta = 3413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,843 >>   train_runtime              = 408.22
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,843 >>   train_samples              =   8551
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:39:52,843 >>   train_samples_per_second   =  1.313
+[INFO|trainer.py:483] 2021-05-08 23:39:52,949 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-08 23:39:52,950 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-08 23:39:52,950 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-08 23:39:52,950 >>   Batch size = 8
+100% 131/131 [00:09<00:00, 14.35it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-08 23:40:02,197 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_loss                 =  0.4585
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_matthews_correlation =   0.561
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_runtime              =   9.142
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-08 23:40:02,197 >>   eval_samples_per_second   = 114.088
+
+
+env: POOL_NAME=MY_STO1
+2021-05-09 00:03:25.537316: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:03:27,877 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:03:27,878 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO1",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:03:28,090 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:03:28,091 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:03:29,127 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:03:29,128 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:03:29,128 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:03:29,128 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:03:29,128 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:03:29,356 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:03:32,841 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:03:32,841 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:03:36,511 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-09 00:03:36,512 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-09 00:03:36,686 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:03:36,686 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:03:36,686 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:03:36,686 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:03:36,686 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:03:36,686 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:03:36,686 >>   Total optimization steps = 536
+ 93% 500/536 [06:02<00:26,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:09:39,261 >> Saving model checkpoint to /tmp/cola/MY_STO1/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:09:39,262 >> Configuration saved in /tmp/cola/MY_STO1/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:09:40,900 >> Model weights saved in /tmp/cola/MY_STO1/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:09:40,901 >> tokenizer config file saved in /tmp/cola/MY_STO1/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:09:40,902 >> Special tokens file saved in /tmp/cola/MY_STO1/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:34<00:00,  1.68it/s][INFO|trainer.py:1129] 2021-05-09 00:10:10,777 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:34<00:00,  1.36it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:10:10,985 >> Saving model checkpoint to /tmp/cola/MY_STO1/
+[INFO|configuration_utils.py:314] 2021-05-09 00:10:10,986 >> Configuration saved in /tmp/cola/MY_STO1/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:10:12,581 >> Model weights saved in /tmp/cola/MY_STO1/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:10:12,582 >> tokenizer config file saved in /tmp/cola/MY_STO1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:10:12,582 >> Special tokens file saved in /tmp/cola/MY_STO1/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:10:12,616 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_runtime              = 394.0909
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:12,616 >>   train_samples_per_second   =     1.36
+[INFO|trainer.py:483] 2021-05-09 00:10:12,720 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-09 00:10:12,722 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:10:12,722 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:10:12,722 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.79it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:10:21,767 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,767 >>   epoch                     =    2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_loss                 =  0.466
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_matthews_correlation = 0.5233
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_mem_cpu_alloc_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_mem_cpu_peaked_delta =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_mem_gpu_alloc_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_mem_gpu_peaked_delta =   33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_runtime              = 8.9328
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_samples              =   1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:10:21,768 >>   eval_samples_per_second   = 116.76
+
+
+env: POOL_NAME=MY_STO2
+2021-05-09 00:10:25.671194: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:10:27,852 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:10:27,853 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO2",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:10:28,066 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:10:28,067 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:10:29,252 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:10:29,252 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:10:29,252 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:10:29,252 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:10:29,252 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:10:29,478 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:10:32,892 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:10:32,892 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:10:36,641 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-09 00:10:36,641 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-09 00:10:36,819 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:10:36,820 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:10:36,820 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:10:36,820 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:10:36,820 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:10:36,820 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:10:36,820 >>   Total optimization steps = 536
+ 93% 500/536 [06:15<00:26,  1.34it/s][INFO|trainer.py:1558] 2021-05-09 00:16:51,990 >> Saving model checkpoint to /tmp/cola/MY_STO2/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:16:51,991 >> Configuration saved in /tmp/cola/MY_STO2/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:16:53,505 >> Model weights saved in /tmp/cola/MY_STO2/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:16:53,506 >> tokenizer config file saved in /tmp/cola/MY_STO2/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:16:53,506 >> Special tokens file saved in /tmp/cola/MY_STO2/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:46<00:00,  1.69it/s][INFO|trainer.py:1129] 2021-05-09 00:17:22,914 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:46<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:17:23,118 >> Saving model checkpoint to /tmp/cola/MY_STO2/
+[INFO|configuration_utils.py:314] 2021-05-09 00:17:23,118 >> Configuration saved in /tmp/cola/MY_STO2/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:17:24,715 >> Model weights saved in /tmp/cola/MY_STO2/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:17:24,716 >> tokenizer config file saved in /tmp/cola/MY_STO2/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:17:24,716 >> Special tokens file saved in /tmp/cola/MY_STO2/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:17:24,745 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,745 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,746 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,746 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,746 >>   train_runtime              = 406.0945
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,746 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:24,746 >>   train_samples_per_second   =     1.32
+[INFO|trainer.py:483] 2021-05-09 00:17:24,848 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-09 00:17:24,849 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:17:24,849 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:17:24,849 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.74it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:17:33,883 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   epoch                     =    2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_loss                 = 0.4584
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_matthews_correlation = 0.5316
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_mem_cpu_alloc_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_mem_cpu_peaked_delta =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_mem_gpu_alloc_delta  =    0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_mem_gpu_peaked_delta =   33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_runtime              = 8.9321
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_samples              =   1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:17:33,884 >>   eval_samples_per_second   = 116.77
+
+
+env: POOL_NAME=MY_STO3
+2021-05-09 00:17:36.416082: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:17:38,498 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:17:38,498 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO3",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:17:38,705 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:17:38,706 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:17:39,753 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:17:39,753 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:17:39,753 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:17:39,753 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:17:39,753 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:17:39,982 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:17:43,392 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:17:43,392 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:17:47,026 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:483] 2021-05-09 00:17:47,026 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:946] 2021-05-09 00:17:47,202 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:17:47,202 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:17:47,202 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:17:47,202 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:17:47,202 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:17:47,202 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:17:47,202 >>   Total optimization steps = 536
+ 93% 500/536 [06:14<00:26,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:24:01,989 >> Saving model checkpoint to /tmp/cola//MY_STO3/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:24:01,990 >> Configuration saved in /tmp/cola//MY_STO3/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:24:03,547 >> Model weights saved in /tmp/cola//MY_STO3/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:24:03,548 >> tokenizer config file saved in /tmp/cola//MY_STO3/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:24:03,548 >> Special tokens file saved in /tmp/cola//MY_STO3/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:46<00:00,  1.67it/s][INFO|trainer.py:1129] 2021-05-09 00:24:33,559 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:46<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:24:33,765 >> Saving model checkpoint to /tmp/cola//MY_STO3/
+[INFO|configuration_utils.py:314] 2021-05-09 00:24:33,766 >> Configuration saved in /tmp/cola//MY_STO3/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:24:35,398 >> Model weights saved in /tmp/cola//MY_STO3/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:24:35,398 >> tokenizer config file saved in /tmp/cola//MY_STO3/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:24:35,399 >> Special tokens file saved in /tmp/cola//MY_STO3/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:24:35,430 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,430 >>   train_runtime              = 406.3562
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,431 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:35,431 >>   train_samples_per_second   =    1.319
+[INFO|trainer.py:483] 2021-05-09 00:24:35,538 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:1775] 2021-05-09 00:24:35,539 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:24:35,540 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:24:35,540 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.73it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:24:44,618 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_loss                 =   0.467
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_matthews_correlation =  0.5548
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_runtime              =  8.9634
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:24:44,618 >>   eval_samples_per_second   = 116.362
+
+
+env: POOL_NAME=MY_STO4
+2021-05-09 00:24:47.142480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:24:49,317 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:24:49,318 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO4",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:24:49,523 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:24:49,524 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:24:50,569 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:24:50,569 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:24:50,569 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:24:50,569 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:24:50,569 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:24:50,808 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:24:54,284 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:24:54,284 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:24:57,818 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-09 00:24:57,819 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-09 00:24:57,995 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:24:57,995 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:24:57,995 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:24:57,995 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:24:57,995 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:24:57,995 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:24:57,995 >>   Total optimization steps = 536
+ 93% 500/536 [06:15<00:27,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:31:13,547 >> Saving model checkpoint to /tmp/cola/MY_STO4/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:31:13,548 >> Configuration saved in /tmp/cola/MY_STO4/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:31:15,181 >> Model weights saved in /tmp/cola/MY_STO4/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:31:15,182 >> tokenizer config file saved in /tmp/cola/MY_STO4/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:31:15,182 >> Special tokens file saved in /tmp/cola/MY_STO4/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:47<00:00,  1.68it/s][INFO|trainer.py:1129] 2021-05-09 00:31:45,115 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:47<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:31:45,319 >> Saving model checkpoint to /tmp/cola/MY_STO4/
+[INFO|configuration_utils.py:314] 2021-05-09 00:31:45,320 >> Configuration saved in /tmp/cola/MY_STO4/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:31:46,978 >> Model weights saved in /tmp/cola/MY_STO4/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:31:46,978 >> tokenizer config file saved in /tmp/cola/MY_STO4/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:31:46,978 >> Special tokens file saved in /tmp/cola/MY_STO4/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:31:47,012 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,012 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_runtime              = 407.1204
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:47,013 >>   train_samples_per_second   =    1.317
+[INFO|trainer.py:483] 2021-05-09 00:31:47,117 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-09 00:31:47,118 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:31:47,118 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:31:47,118 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.77it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:31:56,178 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_loss                 =  0.4533
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_matthews_correlation =  0.5577
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_runtime              =  8.9575
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:31:56,179 >>   eval_samples_per_second   = 116.439
+
+env: POOL_NAME=MY_STO5
+2021-05-09 00:31:58.712323: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:32:01,372 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:32:01,373 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO5",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:32:01,587 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:32:01,588 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:32:02,778 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:32:02,778 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:32:02,778 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:32:02,778 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:32:02,778 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:32:03,015 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:32:06,410 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:32:06,410 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:32:10,065 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-09 00:32:10,066 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-09 00:32:10,241 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:32:10,241 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:32:10,242 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:32:10,242 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:32:10,242 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:32:10,242 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:32:10,242 >>   Total optimization steps = 536
+ 93% 500/536 [06:15<00:27,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:38:25,918 >> Saving model checkpoint to /tmp/cola//MY_STO5/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:38:25,919 >> Configuration saved in /tmp/cola//MY_STO5/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:38:27,614 >> Model weights saved in /tmp/cola//MY_STO5/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:38:27,614 >> tokenizer config file saved in /tmp/cola//MY_STO5/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:38:27,615 >> Special tokens file saved in /tmp/cola//MY_STO5/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:47<00:00,  1.67it/s][INFO|trainer.py:1129] 2021-05-09 00:38:57,700 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:47<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:38:57,906 >> Saving model checkpoint to /tmp/cola//MY_STO5/
+[INFO|configuration_utils.py:314] 2021-05-09 00:38:57,907 >> Configuration saved in /tmp/cola//MY_STO5/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:38:59,601 >> Model weights saved in /tmp/cola//MY_STO5/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:38:59,601 >> tokenizer config file saved in /tmp/cola//MY_STO5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:38:59,602 >> Special tokens file saved in /tmp/cola//MY_STO5/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:38:59,638 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,638 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,639 >>   train_runtime              = 407.4586
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,639 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:38:59,639 >>   train_samples_per_second   =    1.315
+[INFO|trainer.py:483] 2021-05-09 00:38:59,744 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-09 00:38:59,746 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:38:59,746 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:38:59,746 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.70it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:39:08,855 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_loss                 =  0.4506
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_matthews_correlation =  0.5627
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_runtime              =  9.0011
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:39:08,855 >>   eval_samples_per_second   = 115.875
+
+env: POOL_NAME=MY_STO6
+2021-05-09 00:39:11.383776: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:39:13,593 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:39:13,594 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO6",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:39:13,808 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:39:13,808 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:39:14,851 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:39:14,851 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:39:14,851 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:39:14,852 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:39:14,852 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:39:15,081 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:39:18,548 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:39:18,548 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:39:22,228 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:483] 2021-05-09 00:39:22,228 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:946] 2021-05-09 00:39:22,413 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:39:22,413 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:39:22,413 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:39:22,413 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:39:22,413 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:39:22,414 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:39:22,414 >>   Total optimization steps = 536
+ 93% 500/536 [06:14<00:27,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:45:37,394 >> Saving model checkpoint to /tmp/cola//MY_STO6/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:45:37,395 >> Configuration saved in /tmp/cola//MY_STO6/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:45:38,792 >> Model weights saved in /tmp/cola//MY_STO6/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:45:38,793 >> tokenizer config file saved in /tmp/cola//MY_STO6/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:45:38,793 >> Special tokens file saved in /tmp/cola//MY_STO6/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:46<00:00,  1.69it/s][INFO|trainer.py:1129] 2021-05-09 00:46:08,504 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:46<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:46:08,709 >> Saving model checkpoint to /tmp/cola//MY_STO6/
+[INFO|configuration_utils.py:314] 2021-05-09 00:46:08,709 >> Configuration saved in /tmp/cola//MY_STO6/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:46:10,329 >> Model weights saved in /tmp/cola//MY_STO6/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:46:10,330 >> tokenizer config file saved in /tmp/cola//MY_STO6/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:46:10,330 >> Special tokens file saved in /tmp/cola//MY_STO6/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:46:10,362 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_runtime              = 406.0908
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:10,362 >>   train_samples_per_second   =     1.32
+[INFO|trainer.py:483] 2021-05-09 00:46:10,466 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:1775] 2021-05-09 00:46:10,467 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:46:10,467 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:46:10,467 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.66it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:46:19,554 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_loss                 =  0.4516
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_matthews_correlation =  0.5651
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_runtime              =  8.9781
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:46:19,554 >>   eval_samples_per_second   = 116.171
+
+env: POOL_NAME=MY_STO7
+2021-05-09 00:46:22.148557: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:46:24,441 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:46:24,441 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO7",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:46:24,646 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:46:24,646 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:46:25,689 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:46:25,690 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:46:25,690 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:46:25,690 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:46:25,690 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:46:25,930 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:46:29,358 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:46:29,358 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:46:32,983 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:483] 2021-05-09 00:46:32,984 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:946] 2021-05-09 00:46:33,177 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:46:33,177 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:46:33,178 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:46:33,178 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:46:33,178 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:46:33,178 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:46:33,178 >>   Total optimization steps = 536
+ 93% 500/536 [06:14<00:27,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:52:47,757 >> Saving model checkpoint to /tmp/cola//MY_STO7/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:52:47,758 >> Configuration saved in /tmp/cola//MY_STO7/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:52:49,370 >> Model weights saved in /tmp/cola//MY_STO7/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:52:49,371 >> tokenizer config file saved in /tmp/cola//MY_STO7/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:52:49,372 >> Special tokens file saved in /tmp/cola//MY_STO7/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:46<00:00,  1.68it/s][INFO|trainer.py:1129] 2021-05-09 00:53:19,353 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:46<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 00:53:19,557 >> Saving model checkpoint to /tmp/cola//MY_STO7/
+[INFO|configuration_utils.py:314] 2021-05-09 00:53:19,558 >> Configuration saved in /tmp/cola//MY_STO7/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 00:53:21,214 >> Model weights saved in /tmp/cola//MY_STO7/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 00:53:21,215 >> tokenizer config file saved in /tmp/cola//MY_STO7/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 00:53:21,215 >> Special tokens file saved in /tmp/cola//MY_STO7/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:53:21,255 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_runtime              = 406.1757
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:21,255 >>   train_samples_per_second   =     1.32
+[INFO|trainer.py:483] 2021-05-09 00:53:21,359 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: idx, sentence.
+[INFO|trainer.py:1775] 2021-05-09 00:53:21,360 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 00:53:21,360 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 00:53:21,361 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.67it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 00:53:30,480 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_loss                 =  0.4514
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_matthews_correlation =  0.5522
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_runtime              =  9.0202
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 00:53:30,480 >>   eval_samples_per_second   = 115.629
+
+env: POOL_NAME=MY_STO8
+2021-05-09 00:53:33.482911: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[INFO|configuration_utils.py:463] 2021-05-09 00:53:35,891 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:53:35,891 >> Model config MyBertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "cola",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooling_layer_type": "MY_STO8",
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|configuration_utils.py:463] 2021-05-09 00:53:36,096 >> loading configuration file https://huggingface.co/bert-base-cased/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/a803e0468a8fe090683bdc453f4fac622804f49de86d7cecaee92365d4a0f829.a64a22196690e0e82ead56f388a3ef3a50de93335926ccfa20610217db589307
+[INFO|configuration_utils.py:499] 2021-05-09 00:53:36,097 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.4.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 28996
+}
+
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:53:37,149 >> loading file https://huggingface.co/bert-base-cased/resolve/main/vocab.txt from cache at /root/.cache/huggingface/transformers/6508e60ab3c1200bffa26c95f4b58ac6b6d95fba4db1f195f632fa3cd7bc64cc.437aa611e89f6fc6675a049d2b5545390adbc617e7d655286421c191d2be2791
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:53:37,149 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer.json from cache at /root/.cache/huggingface/transformers/226a307193a9f4344264cdc76a12988448a25345ba172f2c7421f3b6810fddad.3dab63143af66769bbb35e3811f75f7e16b2320e12b7935e216bd6159ce6d9a6
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:53:37,149 >> loading file https://huggingface.co/bert-base-cased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:53:37,149 >> loading file https://huggingface.co/bert-base-cased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1702] 2021-05-09 00:53:37,149 >> loading file https://huggingface.co/bert-base-cased/resolve/main/tokenizer_config.json from cache at /root/.cache/huggingface/transformers/ec84e86ee39bfe112543192cf981deebf7e6cbe8c91b8f7f8f63c9be44366158.ec5c189f89475aac7d8cbd243960a0655cfadc3d0474da8ff2ed0bf1699c2a5f
+[INFO|modeling_utils.py:1051] 2021-05-09 00:53:37,381 >> loading weights file https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin from cache at /root/.cache/huggingface/transformers/092cc582560fc3833e556b3f833695c26343cb54b7e88cd02d40821462a74999.1f48cab6c959fc6c360d22bea39d06959e90f5b002e77e836d2da45464875cda
+[WARNING|modeling_utils.py:1159] 2021-05-09 00:53:40,757 >> Some weights of the model checkpoint at bert-base-cased were not used when initializing MyBertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MyBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1170] 2021-05-09 00:53:40,757 >> Some weights of MyBertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['bert.pooler.fc.weight', 'bert.pooler.fc.bias', 'classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:483] 2021-05-09 00:53:44,298 >> The following columns in the training set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:483] 2021-05-09 00:53:44,298 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:946] 2021-05-09 00:53:44,484 >> ***** Running training *****
+[INFO|trainer.py:947] 2021-05-09 00:53:44,484 >>   Num examples = 8551
+[INFO|trainer.py:948] 2021-05-09 00:53:44,484 >>   Num Epochs = 2
+[INFO|trainer.py:949] 2021-05-09 00:53:44,484 >>   Instantaneous batch size per device = 32
+[INFO|trainer.py:950] 2021-05-09 00:53:44,484 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:951] 2021-05-09 00:53:44,484 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:952] 2021-05-09 00:53:44,484 >>   Total optimization steps = 536
+ 93% 500/536 [06:14<00:27,  1.33it/s][INFO|trainer.py:1558] 2021-05-09 00:59:59,224 >> Saving model checkpoint to /tmp/cola//MY_STO8/checkpoint-500
+[INFO|configuration_utils.py:314] 2021-05-09 00:59:59,225 >> Configuration saved in /tmp/cola//MY_STO8/checkpoint-500/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 01:00:00,869 >> Model weights saved in /tmp/cola//MY_STO8/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 01:00:00,870 >> tokenizer config file saved in /tmp/cola//MY_STO8/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 01:00:00,870 >> Special tokens file saved in /tmp/cola//MY_STO8/checkpoint-500/special_tokens_map.json
+100% 536/536 [06:46<00:00,  1.68it/s][INFO|trainer.py:1129] 2021-05-09 01:00:30,798 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100% 536/536 [06:46<00:00,  1.32it/s]
+[INFO|trainer.py:1558] 2021-05-09 01:00:31,000 >> Saving model checkpoint to /tmp/cola//MY_STO8/
+[INFO|configuration_utils.py:314] 2021-05-09 01:00:31,001 >> Configuration saved in /tmp/cola//MY_STO8/config.json
+[INFO|modeling_utils.py:837] 2021-05-09 01:00:32,567 >> Model weights saved in /tmp/cola//MY_STO8/pytorch_model.bin
+[INFO|tokenization_utils_base.py:1896] 2021-05-09 01:00:32,568 >> tokenizer config file saved in /tmp/cola//MY_STO8/tokenizer_config.json
+[INFO|tokenization_utils_base.py:1902] 2021-05-09 01:00:32,568 >> Special tokens file saved in /tmp/cola//MY_STO8/special_tokens_map.json
+[INFO|trainer_pt_utils.py:656] 2021-05-09 01:00:32,598 >> ***** train metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   epoch                      =      2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   init_mem_cpu_alloc_delta   =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   init_mem_cpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   init_mem_gpu_alloc_delta   =    413MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   init_mem_gpu_peaked_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_mem_cpu_alloc_delta  =      0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_mem_cpu_peaked_delta =    170MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_mem_gpu_alloc_delta  =   1298MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_mem_gpu_peaked_delta =   3395MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_runtime              = 406.3136
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_samples              =     8551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:32,598 >>   train_samples_per_second   =    1.319
+[INFO|trainer.py:483] 2021-05-09 01:00:32,712 >> The following columns in the evaluation set  don't have a corresponding argument in `MyBertForSequenceClassification.forward` and have been ignored: sentence, idx.
+[INFO|trainer.py:1775] 2021-05-09 01:00:32,713 >> ***** Running Evaluation *****
+[INFO|trainer.py:1776] 2021-05-09 01:00:32,713 >>   Num examples = 1043
+[INFO|trainer.py:1777] 2021-05-09 01:00:32,713 >>   Batch size = 8
+100% 131/131 [00:08<00:00, 14.71it/s]
+[INFO|trainer_pt_utils.py:656] 2021-05-09 01:00:41,778 >> ***** eval metrics *****
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   epoch                     =     2.0
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_loss                 =  0.4551
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_matthews_correlation =  0.5572
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_mem_cpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_mem_cpu_peaked_delta =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_mem_gpu_alloc_delta  =     0MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_mem_gpu_peaked_delta =    33MB
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_runtime              =    8.95
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_samples              =    1043
+[INFO|trainer_pt_utils.py:661] 2021-05-09 01:00:41,779 >>   eval_samples_per_second   = 116.537

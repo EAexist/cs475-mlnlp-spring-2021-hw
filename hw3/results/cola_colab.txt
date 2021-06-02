@@ -1,0 +1,329 @@
+MY_STO1
+
+ [804/804 04:07, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.434070	0.549497	1.909300	546.261000
+2	0.410000	0.425977	0.597100	1.912800	545.274000
+3	0.410000	0.507720	0.585511	1.925700	541.626000
+TrainOutput(global_step=804, training_loss=0.3381570180257161, metrics={'train_runtime': 247.5041, 'train_samples_per_second': 3.248, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -10788864, 'train_mem_gpu_alloc_delta': 1770731520, 'train_mem_cpu_peaked_delta': 13266944, 'train_mem_gpu_peaked_delta': 662532096})
+
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.42567959427833557,
+ 'eval_matthews_correlation': 0.5996414510050793,
+ 'eval_mem_cpu_alloc_delta': 131072,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 39827968,
+ 'eval_runtime': 1.9878,
+ 'eval_samples_per_second': 524.691}
+
+ [1072/1072 05:25, Epoch 4/4]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.416031	0.552229	1.914100	544.916000
+2	0.406300	0.439305	0.578479	1.952100	534.306000
+3	0.406300	0.515437	0.588414	1.905800	547.279000
+4	0.187200	0.591426	0.573511	1.943400	536.694000
+TrainOutput(global_step=1072, training_loss=0.28775499205091104, metrics={'train_runtime': 326.1698, 'train_samples_per_second': 3.287, 'total_flos': 521000673336156.0, 'epoch': 4.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -8765440, 'train_mem_gpu_alloc_delta': 1772697600, 'train_mem_cpu_peaked_delta': 11411456, 'train_mem_gpu_peaked_delta': 660777472})
+ [33/33 00:01]
+{'epoch': 4.0,
+ 'eval_loss': 0.5157992839813232,
+ 'eval_matthews_correlation': 0.5810381850664859,
+ 'eval_mem_cpu_alloc_delta': 241664,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 38812160,
+ 'eval_runtime': 1.9502,
+ 'eval_samples_per_second': 534.804}
+
+
+ [1072/1072 05:25, Epoch 4/4]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.416031	0.552229	1.914100	544.916000
+2	0.406300	0.439305	0.578479	1.952100	534.306000
+3	0.406300	0.515437	0.588414	1.905800	547.279000
+4	0.187200	0.591426	0.573511	1.943400	536.694000
+TrainOutput(global_step=1072, training_loss=0.28775499205091104, metrics={'train_runtime': 326.1698, 'train_samples_per_second': 3.287, 'total_flos': 521000673336156.0, 'epoch': 4.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -8765440, 'train_mem_gpu_alloc_delta': 1772697600, 'train_mem_cpu_peaked_delta': 11411456, 'train_mem_gpu_peaked_delta': 660777472})
+ [33/33 00:01]
+{'epoch': 4.0,
+ 'eval_loss': 0.5157992839813232,
+ 'eval_matthews_correlation': 0.5810381850664859,
+ 'eval_mem_cpu_alloc_delta': 241664,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 38812160,
+ 'eval_runtime': 1.9502,
+ 'eval_samples_per_second': 534.804}
+
+
+
+MY_STO2
+
+ [804/804 04:07, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.413848	0.575301	1.920100	543.192000
+2	0.399700	0.441510	0.580473	1.960800	531.935000
+3	0.399700	0.530658	0.575301	1.933800	539.351000
+TrainOutput(global_step=804, training_loss=0.32414962521832974, metrics={'train_runtime': 247.7136, 'train_samples_per_second': 3.246, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -8642560, 'train_mem_gpu_alloc_delta': 1772566528, 'train_mem_cpu_peaked_delta': 11702272, 'train_mem_gpu_peaked_delta': 660908544})
+
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.44126656651496887,
+ 'eval_matthews_correlation': 0.583024886611504,
+ 'eval_mem_cpu_alloc_delta': -221184,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 46266880,
+ 'eval_runtime': 1.9511,
+ 'eval_samples_per_second': 534.574}
+
+ [804/804 04:06, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.413848	0.575301	1.909200	546.298000
+2	0.399700	0.441510	0.580473	1.947800	535.467000
+3	0.399700	0.530658	0.575301	1.921300	542.861000
+TrainOutput(global_step=804, training_loss=0.32414962521832974, metrics={'train_runtime': 247.23, 'train_samples_per_second': 3.252, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -4272128, 'train_mem_gpu_alloc_delta': 1771943936, 'train_mem_cpu_peaked_delta': 4272128, 'train_mem_gpu_peaked_delta': 661039616})
+
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.44126656651496887,
+ 'eval_matthews_correlation': 0.583024886611504,
+ 'eval_mem_cpu_alloc_delta': 147456,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 38812160,
+ 'eval_runtime': 1.9257,
+ 'eval_samples_per_second': 541.613}
+
+
+ [1072/1072 05:27, Epoch 4/4]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.410558	0.577859	1.910200	546.019000
+2	0.399900	0.445905	0.577818	1.884200	553.547000
+3	0.399900	0.527903	0.583104	1.919800	543.287000
+4	0.169800	0.610932	0.590741	1.929900	540.439000
+TrainOutput(global_step=1072, training_loss=0.2751749042254775, metrics={'train_runtime': 328.2587, 'train_samples_per_second': 3.266, 'total_flos': 521000673336156.0, 'epoch': 4.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -9482240, 'train_mem_gpu_alloc_delta': 1772468224, 'train_mem_cpu_peaked_delta': 9498624, 'train_mem_gpu_peaked_delta': 659270144})
+ [33/33 00:01]
+{'epoch': 4.0,
+ 'eval_loss': 0.6095627546310425,
+ 'eval_matthews_correlation': 0.5958164600267423,
+ 'eval_mem_cpu_alloc_delta': 188416,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 52640256,
+ 'eval_runtime': 1.9322,
+ 'eval_samples_per_second': 539.813}
+
+MY_STO3
+
+
+ [536/536 02:17, Epoch 2/2]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.417161	0.541683	1.535900	679.087000
+2	0.389600	0.469455	0.554700	1.538300	678.028000
+TrainOutput(global_step=536, training_loss=0.3819010168758791, metrics={'train_runtime': 137.3949, 'train_samples_per_second': 3.901, 'total_flos': 260813350789380.0, 'epoch': 2.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438842880, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -446464, 'train_mem_gpu_alloc_delta': 1770076160, 'train_mem_cpu_peaked_delta': 3465216, 'train_mem_gpu_peaked_delta': 663187456})
+ [33/33 00:01]
+{'epoch': 2.0,
+ 'eval_loss': 0.46487611532211304,
+ 'eval_matthews_correlation': 0.5522294868395369,
+ 'eval_mem_cpu_alloc_delta': 12288,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 39827968,
+ 'eval_runtime': 1.6246,
+ 'eval_samples_per_second': 642.006}
+
+ [804/804 04:17, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.405389	0.578479	1.928700	540.783000
+2	0.397600	0.448296	0.570305	1.950900	534.621000
+3	0.397600	0.543951	0.565252	1.916800	544.131000
+TrainOutput(global_step=804, training_loss=0.3212471767444516, metrics={'train_runtime': 258.1188, 'train_samples_per_second': 3.115, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -7929856, 'train_mem_gpu_alloc_delta': 1772566528, 'train_mem_cpu_peaked_delta': 7942144, 'train_mem_gpu_peaked_delta': 660908544})
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.40514934062957764,
+ 'eval_matthews_correlation': 0.5733495702281163,
+ 'eval_mem_cpu_alloc_delta': 118784,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 38812160,
+ 'eval_runtime': 1.9913,
+ 'eval_samples_per_second': 523.781}
+
+ [804/804 04:07, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.408907	0.550248	1.938200	538.127000
+2	0.392600	0.456141	0.577859	1.925100	541.780000
+3	0.392600	0.550036	0.575257	1.939400	537.806000
+TrainOutput(global_step=804, training_loss=0.31739107293276053, metrics={'train_runtime': 247.5599, 'train_samples_per_second': 3.248, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -2658304, 'train_mem_gpu_alloc_delta': 1770731520, 'train_mem_cpu_peaked_delta': 5058560, 'train_mem_gpu_peaked_delta': 662532096})
+
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.4545201361179352,
+ 'eval_matthews_correlation': 0.5803450615832939,
+ 'eval_mem_cpu_alloc_delta': 135168,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 39827968,
+ 'eval_runtime': 1.9636,
+ 'eval_samples_per_second': 531.155}
+
+
+ [804/804 04:07, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.404405	0.568367	1.890400	551.737000
+2	0.390200	0.467135	0.557735	1.978000	527.313000
+3	0.390200	0.541712	0.572797	1.907000	546.928000
+TrainOutput(global_step=804, training_loss=0.315210195323128, metrics={'train_runtime': 247.4991, 'train_samples_per_second': 3.248, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -47255552, 'train_mem_gpu_alloc_delta': 1771943936, 'train_mem_cpu_peaked_delta': 47276032, 'train_mem_gpu_peaked_delta': 659794432})
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.5431087613105774,
+ 'eval_matthews_correlation': 0.5676052483913692,
+ 'eval_mem_cpu_alloc_delta': 1908736,
+ 'eval_mem_cpu_peaked_delta': 8192,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 43132928,
+ 'eval_runtime': 1.9549,
+ 'eval_samples_per_second': 533.544}
+
+
+
+ [1340/1340 05:36, Epoch 5/5]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.395842	0.580891	1.496800	696.804000
+2	0.390500	0.453607	0.570137	1.542200	676.328000
+3	0.390500	0.514971	0.580761	1.543400	675.781000
+4	0.157200	0.638719	0.596163	1.565600	666.218000
+5	0.157200	0.773188	0.560465	1.545800	674.731000
+TrainOutput(global_step=1340, training_loss=0.22914736733507754, metrics={'train_runtime': 336.8876, 'train_samples_per_second': 3.978, 'total_flos': 651550881963804.0, 'epoch': 5.0, 'init_mem_cpu_alloc_delta': 2361450496, 'init_mem_gpu_alloc_delta': 439072256, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': 427474944, 'train_mem_gpu_alloc_delta': 1765554176, 'train_mem_cpu_peaked_delta': 0, 'train_mem_gpu_peaked_delta': 666827776})
+
+ [33/33 00:01]
+{'epoch': 5.0,
+ 'eval_loss': 0.6375073790550232,
+ 'eval_matthews_correlation': 0.5958590286908729,
+ 'eval_mem_cpu_alloc_delta': 12288,
+ 'eval_mem_cpu_peaked_delta': 32768,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 38812160,
+ 'eval_runtime': 1.6442,
+ 'eval_samples_per_second': 634.338}
+
+
+MY_STO4
+
+ [1070/1070 04:02, Epoch 2/2]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	0.475800	0.439047	0.525926	2.509000	415.703000
+2	0.276900	0.478255	0.557611	2.437300	427.936000
+TrainOutput(global_step=1070, training_loss=0.36803558563517635, metrics={'train_runtime': 242.7158, 'train_samples_per_second': 4.408, 'total_flos': 233685898211652.0, 'epoch': 2.0, 'init_mem_cpu_alloc_delta': 1714282496, 'init_mem_gpu_alloc_delta': 439072256, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': 452464640, 'train_mem_gpu_alloc_delta': 1760016384, 'train_mem_cpu_peaked_delta': 0, 'train_mem_gpu_peaked_delta': 124535296})
+ [66/66 00:02]
+{'epoch': 2.0,
+ 'eval_loss': 0.4780125021934509,
+ 'eval_matthews_correlation': 0.5575034099514093,
+ 'eval_mem_cpu_alloc_delta': 258048,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 19694080,
+ 'eval_runtime': 2.5428,
+ 'eval_samples_per_second': 410.182}
+
+
+ [804/804 04:04, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.401486	0.562673	1.906800	547.001000
+2	0.388500	0.448722	0.575436	1.932500	539.722000
+3	0.388500	0.550525	0.565032	1.925200	541.771000
+TrainOutput(global_step=804, training_loss=0.3128027275427064, metrics={'train_runtime': 244.8417, 'train_samples_per_second': 3.284, 'total_flos': 391001606046960.0, 'epoch': 3.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438941184, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -5505024, 'train_mem_gpu_alloc_delta': 1765488640, 'train_mem_cpu_peaked_delta': 7118848, 'train_mem_gpu_peaked_delta': 664334336})
+
+ [33/33 00:01]
+{'epoch': 3.0,
+ 'eval_loss': 0.448239266872406,
+ 'eval_matthews_correlation': 0.5653604748370356,
+ 'eval_mem_cpu_alloc_delta': 221184,
+ 'eval_mem_cpu_peaked_delta': 12288,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 39827968,
+ 'eval_runtime': 1.9792,
+ 'eval_samples_per_second': 526.974}5
+
+
+ [1072/1072 05:25, Epoch 4/4]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.402684	0.573205	1.923300	542.305000
+2	0.395000	0.453442	0.559824	1.920800	543.002000
+3	0.395000	0.538304	0.568207	1.897800	549.572000
+4	0.160700	0.616925	0.578479	1.930300	540.331000
+TrainOutput(global_step=1072, training_loss=0.26810472047151024, metrics={'train_runtime': 325.6426, 'train_samples_per_second': 3.292, 'total_flos': 521000673336156.0, 'epoch': 4.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438875648, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -40247296, 'train_mem_gpu_alloc_delta': 1766963200, 'train_mem_cpu_peaked_delta': 40394752, 'train_mem_gpu_peaked_delta': 663529984})
+ [33/33 00:01]
+{'epoch': 4.0,
+ 'eval_loss': 0.6162617206573486,
+ 'eval_matthews_correlation': 0.5858661515147512,
+ 'eval_mem_cpu_alloc_delta': 180224,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 39827968,
+ 'eval_runtime': 1.9457,
+ 'eval_samples_per_second': 536.062}
+
+
+ [1340/1340 06:45, Epoch 5/5]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.413053	0.544301	1.922200	542.616000
+2	0.390300	0.448468	0.583104	1.900900	548.699000
+3	0.390300	0.521446	0.583315	1.913600	545.051000
+4	0.157000	0.668716	0.591244	1.926800	541.302000
+5	0.157000	0.779885	0.575359	1.926800	541.321000
+TrainOutput(global_step=1340, training_loss=0.2306028280685197, metrics={'train_runtime': 405.3919, 'train_samples_per_second': 3.305, 'total_flos': 651550881963804.0, 'epoch': 5.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438547968, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -89186304, 'train_mem_gpu_alloc_delta': 1770862592, 'train_mem_cpu_peaked_delta': 89198592, 'train_mem_gpu_peaked_delta': 663518208})
+ [33/33 00:01]
+{'epoch': 5.0,
+ 'eval_loss': 0.6700009107589722,
+ 'eval_matthews_correlation': 0.5912435391119252,
+ 'eval_mem_cpu_alloc_delta': 135168,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 38812160,
+ 'eval_runtime': 1.9446,
+ 'eval_samples_per_second': 536.348}
+
+ [3210/3210 11:36, Epoch 6/6]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	0.474100	0.461534	0.499454	2.550500	408.933000
+2	0.280100	0.447160	0.573883	2.523600	413.298000
+3	0.176500	0.703561	0.589931	2.477100	421.058000
+4	0.129300	0.865429	0.571118	2.444400	426.694000
+5	0.089200	0.920131	0.602180	2.488200	419.175000
+6	0.057200	1.024065	0.586905	2.487300	419.338000
+TrainOutput(global_step=3210, training_loss=0.19077053515710563, metrics={'train_runtime': 696.9237, 'train_samples_per_second': 4.606, 'total_flos': 698516138212464.0, 'epoch': 6.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438941184, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -23957504, 'train_mem_gpu_alloc_delta': 1763948544, 'train_mem_cpu_peaked_delta': 25346048, 'train_mem_gpu_peaked_delta': 124797440})
+ [66/66 00:02]
+{'epoch': 6.0,
+ 'eval_loss': 0.9207501411437988,
+ 'eval_matthews_correlation': 0.594786450396496,
+ 'eval_mem_cpu_alloc_delta': 40960,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 19825152,
+ 'eval_runtime': 2.5905,
+ 'eval_samples_per_second': 402.624}
+
+
+MY_STO5
+
+
+ [1072/1072 05:27, Epoch 4/4]
+Epoch	Training Loss	Validation Loss	Matthews Correlation	Runtime	Samples Per Second
+1	No log	0.401055	0.567661	1.908200	546.577000
+2	0.393400	0.440714	0.554824	1.925500	541.681000
+3	0.393400	0.522618	0.576078	1.944900	536.265000
+4	0.156700	0.627747	0.570780	1.959400	532.303000
+TrainOutput(global_step=1072, training_loss=0.26526907130853455, metrics={'train_runtime': 327.5358, 'train_samples_per_second': 3.273, 'total_flos': 521000673336156.0, 'epoch': 4.0, 'init_mem_cpu_alloc_delta': 0, 'init_mem_gpu_alloc_delta': 438646272, 'init_mem_cpu_peaked_delta': 0, 'init_mem_gpu_peaked_delta': 0, 'train_mem_cpu_alloc_delta': -5980160, 'train_mem_gpu_alloc_delta': 1770731520, 'train_mem_cpu_peaked_delta': 8355840, 'train_mem_gpu_peaked_delta': 662532096})
+
+ [33/33 00:01]
+{'epoch': 4.0,
+ 'eval_loss': 0.5232411026954651,
+ 'eval_matthews_correlation': 0.5784786967005595,
+ 'eval_mem_cpu_alloc_delta': 151552,
+ 'eval_mem_cpu_peaked_delta': 0,
+ 'eval_mem_gpu_alloc_delta': 0,
+ 'eval_mem_gpu_peaked_delta': 39827968,
+ 'eval_runtime': 2.0093,
+ 'eval_samples_per_second': 519.08}

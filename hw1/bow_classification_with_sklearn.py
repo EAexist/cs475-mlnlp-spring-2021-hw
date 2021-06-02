@@ -109,7 +109,23 @@ def preprocess_and_split_to_tokens(sentences: ArrayLike) -> ArrayLike:
     :return: ArrayLike objects of ArrayLike objects of tokens.
         e.g., [["I", "like", "apples"], ["I", "love", "python3"]]
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    
+    puncs = ['.', ',', '\'', '\"', '/', '-', ':', ';', '(', ')', '!', '?']
+    new_sentences = []
+    new_sentences_app = new_sentences.append
+
+    #token_app = tokens.append
+    for sentence in sentences:
+        sentence.replace('it\'s', 'it is')
+        sentence.replace('that\'s', 'that is')
+        sentence.replace('there\'s', 'there is')        
+        for punc in puncs:
+            sentence = sentence.replace(punc, ' '+punc+' ')
+        new_sentences_app(sentence) 
+
+    tokens = [sentence.lower().split() for sentence in new_sentences]
+    return tokens
 
 
 def create_bow(sentences: ArrayLike, vocab: Dict[str, int] = None,
@@ -131,10 +147,28 @@ def create_bow(sentences: ArrayLike, vocab: Dict[str, int] = None,
 
     if vocab is None:
         print("{} Vocab construction".format(msg_prefix))
-        raise NotImplementedError
+        #raise NotImplementedError
+        vocab = {}
+        i = 0
+        for sentence in tokens_per_sentence:
+            for token in sentence:
+                if not (token in vocab):
+                    vocab[token] = i
+                    i += 1
 
     print("{} Bow construction".format(msg_prefix))
-    raise NotImplementedError
+    #raise NotImplementedError
+    j = 0
+    bowarray = []
+    bowarray_app = bowarray.append
+    for sentence in tokens_per_sentence:
+        bow = [0]*len(vocab)
+        for token in sentence:
+            if token in vocab:
+                bow[vocab[token]] += 1
+        bowarray_app(bow)
+        j += 1    
+    return (vocab, bowarray)
 
 
 def run(test_xs=None, test_ys=None, num_samples=10000, verbose=True):
@@ -176,7 +210,6 @@ def run(test_xs=None, test_ys=None, num_samples=10000, verbose=True):
         return {"clf": clf, "val_accuracy": val_accuracy, "test_accuracy": accuracy_score(test_ys, test_preds)}
     else:
         return {"clf": clf}
-
 
 if __name__ == '__main__':
     # Usage $ python bow_classification_with_sklearn.py --num-samples 10000 --verbose True
